@@ -9,21 +9,27 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/e626951ecb.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <div class="container">
+    <section class="text-white">
+      <div
+        class="container d-flex justify-content-center g-col-6 align-items-center"
+      >
         <div class="row">
-          <div class="col" id="team1">
+          <div class="col-6 bg-dark" id="team1">
             <h3>Takım A</h3>
             <h4></h4>
             <div class="buttons">
               <button class="increase-button" onclick="increaseScore1()">
-                arttır
+                <i class="fa-solid fa-plus"></i>
               </button>
               <button class="decrease-button" onclick="decreaseScore1()">
-                azalt
+                <i class="fa-solid fa-minus"></i>
               </button>
             </div>
             <div class="direct-score">
@@ -33,15 +39,15 @@
               <button onclick="changeName1()">isim değiştir</button>
             </div>
           </div>
-          <div class="col" id="team2">
+          <div class="col-6" id="team2">
             <h3>Takım B</h3>
             <h4></h4>
             <div class="buttons">
-              <button class="increase-button" onclick="increaseScore2()">
-                arttır
+              <button class="btn btn-outline-light" onclick="increaseScore2()">
+                <i class="fa-solid fa-plus"></i>
               </button>
-              <button class="decrease-button" onclick="decreaseScore2()">
-                azalt
+              <button class="btn btn-outline-light" onclick="decreaseScore2()">
+                <i class="fa-solid fa-minus"></i>
               </button>
             </div>
             <div class="direct-score">

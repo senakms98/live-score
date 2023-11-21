@@ -40,7 +40,7 @@ const decreaseScore2 = () => {
  
 const directAssign1 = () => {
   const score = prompt("Skor girin: ");
-  if (isNan(score) || +score < 0) {
+  if (isNaN(score) || +score < 0) {
     return alert("Sayı girin.");
   }
   writeScore(team1, score);
@@ -49,7 +49,7 @@ const directAssign1 = () => {
  
 const directAssign2 = () => {
   const score = prompt("Skor girin: ");
-  if (isNan(score) || +score < 0) {
+  if (isNaN(score) || +score < 0) {
     return alert("Sayı girin.");
   }
   writeScore(team2, score);
