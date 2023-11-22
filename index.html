@@ -16,50 +16,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="text-white">
-      <div
-        class="container d-flex justify-content-center g-col-6 align-items-center"
-      >
-        <div class="row">
-          <div class="col-6 bg-dark" id="team1">
-            <h3>Takım A</h3>
-            <h4></h4>
-            <div class="buttons">
-              <button class="increase-button" onclick="increaseScore1()">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="decrease-button" onclick="decreaseScore1()">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-            <div class="direct-score">
-              <button onclick="directAssign1()">direkt ata</button>
-            </div>
-            <div class="change-name">
-              <button onclick="changeName1()">isim değiştir</button>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="team1">
+          <h3>Takım A</h3>
+          <h4></h4>
+          <div class="buttons">
+            <button class="my-button" onclick="increaseScore1()">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="my-button" onclick="decreaseScore1()">
+              <i class="fa-solid fa-minus"></i>
+            </button>
           </div>
-          <div class="col-6" id="team2">
-            <h3>Takım B</h3>
-            <h4></h4>
-            <div class="buttons">
-              <button class="btn btn-outline-light" onclick="increaseScore2()">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="btn btn-outline-light" onclick="decreaseScore2()">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-            </div>
-            <div class="direct-score">
-              <button onclick="directAssign2()">direkt ata</button>
-            </div>
-            <div class="change-name">
-              <button onclick="changeName2()">isim değiştir</button>
-            </div>
+          <div class="direct-score">
+            <button class="my-scd-button" onclick="directAssign1()">
+              skor ata
+            </button>
+          </div>
+          <div class="change-name">
+            <button class="my-scd-button" onclick="changeName1()">
+              takım yaz
+            </button>
+          </div>
+        </div>
+
+        <div class="col" id="team2">
+          <h3>Takım B</h3>
+          <h4></h4>
+          <div class="buttons">
+            <button class="my-button" onclick="increaseScore2()">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="my-button" onclick="decreaseScore2()">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+          </div>
+          <div class="direct-score">
+            <button class="my-scd-button" onclick="directAssign2()">
+              skor ata
+            </button>
+          </div>
+          <div class="change-name">
+            <button class="my-scd-button" onclick="changeName2()">
+              takım yaz
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
